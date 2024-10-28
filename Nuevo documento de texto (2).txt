@@ -1,0 +1,9 @@
+<html>
+<body>
+
+ESTA ES UNA PAGINA DE PRUEBA
+<HR>
+CREADA POR DIEGO JAVIER FUENTES PEREZ
+
+</body>
+</html>
