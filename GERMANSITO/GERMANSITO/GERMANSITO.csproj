@@ -47,9 +47,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ECOLOGIA.cs" />
+    <Compile Include="ECOLOGIA.Designer.cs">
+      <DependentUpon>ECOLOGIA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FISICA1.cs" />
+    <Compile Include="FISICA1.Designer.cs">
+      <DependentUpon>FISICA1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HUMANIDADES.cs" />
+    <Compile Include="HUMANIDADES.Designer.cs">
+      <DependentUpon>HUMANIDADES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INGLES.cs" />
+    <Compile Include="INGLES.Designer.cs">
+      <DependentUpon>INGLES.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs" />
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MATEMATICAS.cs" />
+    <Compile Include="MATEMATICAS.Designer.cs">
+      <DependentUpon>MATEMATICAS.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
