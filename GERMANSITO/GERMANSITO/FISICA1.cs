@@ -12,21 +12,42 @@ using System.Windows.Forms;
 
 namespace GERMANSITO
 {
-	/// <summary>
-	/// Description of FISICA1.
-	/// </summary>
-	public partial class FISICA1 : Form
-	{
-		public FISICA1()
-		{
-			//
-			// The InitializeComponent() call is required for Windows Forms designer support.
-			//
-			InitializeComponent();
-			
-			//
-			// TODO: Add constructor code after the InitializeComponent() call.
-			//
-		}
-	}
+    public partial class FISICA1 : Form
+    {
+        public FISICA1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnCalculateForce_Click(object sender, EventArgs e)
+{
+    MessageBox.Show("Calcular Fuerza botón presionado"); // Mensaje de depuración
+    try
+    {
+        double mass = double.Parse(txtMass.Text);
+        double acceleration = double.Parse(txtAcceleration.Text);
+        double force = mass * acceleration;
+        txtForce.Text = force.ToString("F2") + " N";
+    }
+    catch (FormatException)
+    {
+        MessageBox.Show("Por favor, ingresa valores válidos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+    }
 }
+
+private void btnCalculateReaction_Click(object sender, EventArgs e)
+{
+    MessageBox.Show("Calcular Reacción botón presionado"); // Mensaje de depuración
+    try
+    {
+        double actionForce = double.Parse(txtActionForce.Text);
+        double reactionForce = actionForce;
+        txtReactionForce.Text = reactionForce.ToString("F2") + " N";
+    }
+    catch (FormatException)
+    {
+        MessageBox.Show("Por favor, ingresa valores válidos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+    }
+}
+    }
+    }
