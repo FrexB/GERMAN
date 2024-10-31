@@ -78,6 +78,9 @@
     <EmbeddedResource Include="FISICA1.resx">
       <DependentUpon>FISICA1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="INGLES.resx">
+      <DependentUpon>INGLES.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

@@ -8,7 +8,11 @@
  */
 using System;
 using System.Drawing;
+
+
+using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace GERMANSITO
 {
@@ -17,16 +21,26 @@ namespace GERMANSITO
 	/// </summary>
 	public partial class INGLES : Form
 	{
+		private static readonly string subscriptionKey = "TU_CLAVE_DE_API"; // Reemplaza con tu clave
+        private static readonly string endpoint = "https://api.cognitive.microsofttranslator.com/";
+        
 		public INGLES()
 		{
-			//
-			// The InitializeComponent() call is required for Windows Forms designer support.
-			//
-			InitializeComponent();
+				//
+				// The InitializeComponent() call is required for Windows Forms designer support.
+				//
+				InitializeComponent(); 
+				
+				//
+				// TODO: Add constructor code after the InitializeComponent() call.
+				//
 			
-			//
-			// TODO: Add constructor code after the InitializeComponent() call.
-			//
+		}
+			void ButtonTraducirClick(object sender, EventArgs e)
+			{
+				string textoEspañol = textBoxEspañol.Text;
+	            string traduccion = ButtonTraducirClick(textoEspañol);
+	            textBoxIngles.Text = traduccion;
+			}
 		}
 	}
-}
