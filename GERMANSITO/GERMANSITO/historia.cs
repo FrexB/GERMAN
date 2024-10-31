@@ -1,8 +1,8 @@
 ﻿/*
  * Created by SharpDevelop.
- * User: CC2_PC26
- * Date: 29/10/2024
- * Time: 08:07 a. m.
+ * User: CC2_PC28
+ * Date: 31/10/2024
+ * Time: 07:51 a. m.
  * 
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
@@ -13,11 +13,11 @@ using System.Windows.Forms;
 namespace GERMANSITO
 {
 	/// <summary>
-	/// Description of HUMANIDADES.
+	/// Description of historia.
 	/// </summary>
-	public partial class HUMANIDADES : Form
+	public partial class historia : Form
 	{
-		public HUMANIDADES()
+		public historia()
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
@@ -27,25 +27,11 @@ namespace GERMANSITO
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
-
 		}
 		
-		void Label2Click(object sender, EventArgs e)
+		void PictureBox1Click(object sender, EventArgs e)
 		{
-			Form1 g=new Form1();
-			g.Show();
-		}
-		
-		void Label3Click(object sender, EventArgs e)
-		{
-			literatura x=new literatura();
-			x.Show();
-		}
-		
-		void Label4Click(object sender, EventArgs e)
-		{
-			historia n=new historia();
-			n.Show();
+			
 		}
 	}
 }
