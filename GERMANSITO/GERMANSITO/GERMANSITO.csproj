@@ -47,9 +47,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ECOLOGIA.cs" />
-    <Compile Include="ECOLOGIA.Designer.cs">
-      <DependentUpon>ECOLOGIA.cs</DependentUpon>
+    <Compile Include="cadenas.cs" />
+    <Compile Include="cadenas.Designer.cs">
+      <DependentUpon>cadenas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="definicion.cs" />
+    <Compile Include="definicion.Designer.cs">
+      <DependentUpon>definicion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ECOLOGIA1.cs" />
+    <Compile Include="ECOLOGIA1.Designer.cs">
+      <DependentUpon>ECOLOGIA1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ecosistemas.cs" />
+    <Compile Include="ecosistemas.Designer.cs">
+      <DependentUpon>ecosistemas.cs</DependentUpon>
     </Compile>
     <Compile Include="FISICA1.cs" />
     <Compile Include="FISICA1.Designer.cs">
@@ -75,6 +87,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="cadenas.resx">
+      <DependentUpon>cadenas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="definicion.resx">
+      <DependentUpon>definicion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ECOLOGIA1.resx">
+      <DependentUpon>ECOLOGIA1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ecosistemas.resx">
+      <DependentUpon>ecosistemas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FISICA1.resx">
       <DependentUpon>FISICA1.cs</DependentUpon>
     </EmbeddedResource>
