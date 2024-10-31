@@ -8,9 +8,6 @@
  */
 using System;
 using System.Drawing;
-
-
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -21,26 +18,39 @@ namespace GERMANSITO
 	/// </summary>
 	public partial class INGLES : Form
 	{
-		private static readonly string subscriptionKey = "TU_CLAVE_DE_API"; // Reemplaza con tu clave
-        private static readonly string endpoint = "https://api.cognitive.microsofttranslator.com/";
-        
 		public INGLES()
 		{
 				//
 				// The InitializeComponent() call is required for Windows Forms designer support.
 				//
-				InitializeComponent(); 
+				InitializeComponent();  }
 				
 				//
 				// TODO: Add constructor code after the InitializeComponent() call.
 				//
-			
-		}
-			void ButtonTraducirClick(object sender, EventArgs e)
-			{
-				string textoEspañol = textBoxEspañol.Text;
-	            string traduccion = ButtonTraducirClick(textoEspañol);
-	            textBoxIngles.Text = traduccion;
-			}
-		}
-	}
+
+
+        private void btnTranslate_Click(object sender, EventArgs e)
+        {
+            // Obtener el texto ingresado
+            string textoEspañol = txtSpanish.Text.ToLower(); // Convertir a minúsculas
+            string textoIngles = Traducir(textoEspañol); // Llamar al método de traducción
+            txtEnglish.Text = textoIngles; // Mostrar la traducción
+        }
+
+        private string Traducir(string texto)
+        {
+            // Verificar si la traducción existe en el diccionario
+            if (diccionarioTraducciones.TryGetValue(texto, out string traduccion));
+            {
+                return traduccion; // Retornar la traducción
+            }
+            else
+            {
+                return "Traducción no encontrada"; // Mensaje si no hay traducción
+            }
+        }
+    }
+}
+	
+	
