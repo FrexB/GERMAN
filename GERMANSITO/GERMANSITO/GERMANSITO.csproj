@@ -55,6 +55,14 @@
     <Compile Include="FISICA1.Designer.cs">
       <DependentUpon>FISICA1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form1.cs" />
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="historia.cs" />
+    <Compile Include="historia.Designer.cs">
+      <DependentUpon>historia.cs</DependentUpon>
+    </Compile>
     <Compile Include="HUMANIDADES.cs" />
     <Compile Include="HUMANIDADES.Designer.cs">
       <DependentUpon>HUMANIDADES.cs</DependentUpon>
@@ -62,6 +70,10 @@
     <Compile Include="INGLES.cs" />
     <Compile Include="INGLES.Designer.cs">
       <DependentUpon>INGLES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="literatura.cs" />
+    <Compile Include="literatura.Designer.cs">
+      <DependentUpon>literatura.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs" />
     <Compile Include="MainForm.Designer.cs">
@@ -77,6 +89,18 @@
   <ItemGroup>
     <EmbeddedResource Include="FISICA1.resx">
       <DependentUpon>FISICA1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="historia.resx">
+      <DependentUpon>historia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HUMANIDADES.resx">
+      <DependentUpon>HUMANIDADES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="literatura.resx">
+      <DependentUpon>literatura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
